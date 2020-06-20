@@ -5,7 +5,7 @@ services:
     tty: true
     network_mode: bridge
     volumes:
-      - /backup/Samba:/Shared
+      - /backup/Samba/:/Shared:nocopy
     ports:
       - "445:445"
     build:
